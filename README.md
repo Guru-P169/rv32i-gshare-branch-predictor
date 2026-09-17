@@ -57,7 +57,7 @@ This core predicts the next PC **in the IF stage** instead:
 
 ## Branch Prediction Architecture
 
-![Branch Prediction Architecture](schematic/branch_predictor_architecture.png)
+![Branch Prediction Architecture](architecture/branch_predictor_architecture.png)
 
 ### How a prediction works
 
@@ -112,8 +112,9 @@ rv32i-gshare-branch-predictor/
 │   ├── rv32i_core_tb.sv                # self-checking benchmark testbench
 │   └── instruction_memory.hex          # shared benchmark program
 │
+├── architecture/                       # branch predictor datapath diagram
 ├── results/                            # benchmark summary and Tcl console output
-├── schematic/                          # architecture diagram and Vivado RTL schematic
+├── schematic/                          # Vivado RTL schematic
 ├── waveform/                           # simulation waveform
 │
 └── README.md
